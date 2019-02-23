@@ -1,0 +1,364 @@
+/* Style Sheet */
+
+@font-face {
+  font-family: alsina;
+  src: url("Alsina Ultrajada.TTF");
+}
+
+body {
+  background-color: rgb(100, 100, 100);
+}
+
+
+#head_section {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height : 80px ;
+  width : 100% ;
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  grid-template-rows: auto;
+	background-image: linear-gradient(to right , rgb(29, 77, 1), rgb(0, 98, 122));
+	background-position: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.5),0px  10px 30px 0px rgba(0, 0, 0, 0.2);
+  z-index: 3;
+}
+
+
+.grid-container {
+  display: grid;
+  background-color: rgb(29, 77, 1);
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: max-content;
+  height: max-content;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), -5px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+
+.grid-item {
+  display: block;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 1),-5px -5px 20px 0px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.5s;
+}
+
+
+.stat-bar{
+  display: grid;
+  background-color: rgb(0, 98, 122);
+  grid-template-columns: auto auto auto 2fr;
+  grid-template-rows: auto auto;
+  padding: 10px;
+  column-gap: 10px;
+  row-gap: 10px;
+  height: max-content;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2), -5px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+
+.Money{
+  display: grid;
+  box-shadow:5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+
+.text{
+  background-color: rgb(0,121,85);
+  font-family: alsina;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.shop{
+  display: grid;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  column-gap: 10px;
+  width: max-content;
+  height: max-content;
+}
+
+
+.img{
+  background-color:  rgba(150, 150, 150, 0.747); 
+}
+
+
+.game-zone{
+  position: relative;
+  transform: translate(0,-700px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 20px;
+  width: max-content;
+  height: max-content;
+}
+
+
+.button {
+  background-color: rgb(100,120,0); 
+  color: white;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: alsina;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background: rgb(0, 128, 11);
+  padding-left: 30px;
+}
+
+
+.game-button{
+  background-color: rgb(0, 98, 122);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 0px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+  font-family: alsina;
+}
+
+
+.game-button:hover{
+  background-color: rgb(0, 128, 11);
+  padding-left: 50px;
+}
+
+
+.sell-button{
+  background-color: rgb(0, 98, 122);
+  border: none;
+  width : 100px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+  font-family: alsina;
+}
+
+
+.sell-button:hover{
+  background-color: rgb(90, 128, 0);
+  font-size: 30px;
+}
+
+
+.controls{
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  row-gap: 10px;
+}
+
+
+.Image{
+  position: absolute;
+  transition: all 2s cubic-bezier(0.39, -0.52, 0.57, 1.35);
+}
+
+
+.ZImage{
+  position: absolute;
+  transition: all 1s ease-in-out;
+}
+
+
+.Bullet{
+  position: absolute;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+
+.health-bar {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
+  height: 20px;
+  padding: 5px;
+  background: rgb(0, 98, 122);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 10px;
+  position: relative;
+  grid-column: 2;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 1),-5px -5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+.bar {
+  background: rgb(0, 167, 14);
+  width: 100%;
+  height: 10px;
+  position: relative;
+  transition: width .5s linear;
+  border-radius: 10px;
+}
+
+
+.hit {
+  background: rgb(185, 0, 0); 
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0px;
+  transition: width .5s linear;
+  border-radius: 10px;
+}
+
+
+.timer{
+  font-family: alsina;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  grid-column: 4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 200px;
+  background-color: rgb(0, 98, 122);
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 1),-5px -5px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+
+/* Game Description Style */
+.description-container1{
+  position: relative;
+  transform: translate(0,-850px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:auto auto;
+  row-gap: 20px;
+  width: max-content;
+  height: max-content;
+  transition-duration: 1s;
+  z-index: 2;
+}
+
+
+.description-container2{
+  position: relative;
+  transform: translate(0,+620px);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows:auto auto;
+  row-gap: 20px;
+  width: max-content;
+  height: max-content;
+  transition-duration: 1s;
+  z-index: 2;
+}
+
+
+.rules-button {
+  background-color: rgb(0, 98, 122);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 0px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.5s;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-family: alsina;
+}
+
+
+.rules-button:hover {
+  background-color: rgb(0, 128, 11);
+}
+
+
+.rules{
+  font-family: alsina;
+  text-align: justify;
+  font-weight: 10px;
+  font-size: 15px;
+  display: inline-block;
+  background-color: rgb(155, 155, 155);
+  width: 645px;
+  height: auto;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+  margin: 5px;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows:auto auto auto;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+
+.card{
+  position: relative;
+  background-color: rgb(80, 80, 80);
+  height: 200px;
+  width: 200px;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.7),-5px -5px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img{
+  width: 100%;
+  height: 100%;
+}
+
+
+.description{
+  font-family: alsina;
+  text-align: left;
+  font-size: 15px;
+  display: inline-block;
+  position: absolute;
+  background-color: rgb(155, 155, 155);
+  bottom: 0;
+  width: 100%;
+  top:175px;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.description:hover{
+  top: 70px;
+}
+
+.card-img:hover + .description{
+	top: 70px;
+}
